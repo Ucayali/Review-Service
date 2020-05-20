@@ -43,7 +43,7 @@ npm start
 
 ## CRUD Operations
 
-| HTTP Verb |           Endpoint          |            Action            |
+|    Verb   |           Endpoint          |            Action            |
 |-----------| --------------------------- | ---------------------------- |
 | **POST**  |       /api/allreviews/      |  CREATE a new item into DB   |
 | **GET**   |       /api/allreviews/      |  READ data and return it     |
