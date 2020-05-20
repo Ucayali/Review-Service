@@ -49,3 +49,5 @@ npm start
 | **GET**   |       /api/allreviews/      |  READ data and return it     |
 | **PATCH** |       /api/allreviews/      |  UPDATE item with new review |
 | **DELETE**|       /api/allreviews/      |  DELETE item based on URL ID |
+
+The way this server is set up, it grabs the id directly from the current URL
