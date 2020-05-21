@@ -14,6 +14,7 @@ app.listen(PORT, () => {
 });
 
 app.get("/api/allreviews/", (req, res) => {
+  console.log(req._parsedOriginalUrl);
   if (req._parsedOriginalUrl.search) {
     var arr = req._parsedOriginalUrl.search.split("=");
 console.log(req._parsedOriginalUrl.search);
