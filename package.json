@@ -1,4 +1,13 @@
 {
+  "scripts": {
+    "build:prod": "webpack --config production.config.js",
+    "test:coverage": "jest --verbose --coverage",
+    "seed": "node server/scripts/seed.js ",
+    "watch": "webpack -d --watch",
+    "build": "webpack --config webpack.config.js",
+    "start": "nodemon server/index.js",
+    "test": "jest"
+  },
   "name": "reviews",
   "version": "1.0.0",
   "description": "",
@@ -11,9 +20,12 @@
     "faker": "^4.1.0",
     "jquery": "^3.5.0",
     "mariadb": "^2.3.1",
+    "mysql": "^2.18.1",
     "nodemon": "^2.0.3",
+    "pg": "^8.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "sequelize": "^5.21.10",
     "yarn": "^1.22.4"
   },
   "devDependencies": {
@@ -37,15 +49,6 @@
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
-  },
-  "scripts": {
-    "build:prod": "webpack --config production.config.js",
-    "test:coverage": "jest --verbose --coverage",
-    "seed": "node server/scripts/seed.js ",
-    "watch": "webpack --watch",
-    "build": "webpack --config webpack.config.js",
-    "start:dev": "node server",
-    "test": "jest"
   },
   "author": "",
   "license": "ISC"

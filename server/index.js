@@ -1,12 +1,10 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const db = require("../database");
 
 const app = express();
 const PORT = 3004;
 
-app.use(bodyParser.urlencoded({ extended: true }));
-
+app.use(express.json());
 app.use(express.static(__dirname + "/../client/dist"));
 
 app.listen(PORT, () => {
@@ -14,6 +12,7 @@ app.listen(PORT, () => {
 });
 
 app.get("/api/allreviews/", (req, res) => {
+  console.log(req._parsedOriginalUrl);
   if (req._parsedOriginalUrl.search) {
     var arr = req._parsedOriginalUrl.search.split("=");
 console.log(req._parsedOriginalUrl.search);
@@ -36,4 +35,36 @@ console.log(req._parsedOriginalUrl.search);
       }
     });
   }
+});
+
+app.post("/api/allreviews/", (req, res) => {
+  db.addReview(req.body, (err) => {
+    if (err) {
+      res.status(404).end();
+    } else {
+      res.status(200).end();
+    }
+  })
+});
+
+app.patch("/api/allreviews/", (req, res) => {
+  var arr = req._parsedOriginalUrl.search.split("=");
+  db.updateReview(arr[1], req.body, (err) => {
+    if (err) {
+      res.status(404).end();
+    } else {
+      res.status(200).end();
+    }
+  });
+});
+
+app.delete("/api/allreviews/", (req, res) => {
+  var arr = req._parsedOriginalUrl.search.split("=");
+  db.updateReview(arr[1], (err) => {
+    if (err) {
+      res.status(404).end();
+    } else {
+      res.status(200).end();
+    }
+  });
 });
