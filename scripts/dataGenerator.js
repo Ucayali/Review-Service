@@ -1,5 +1,8 @@
 const fs = require('fs');
 const faker = require('faker');
+const csvWriter = require('csv-write-stream');
+
+const writer = csvWriter();
 
 const randomBetweenSix = () => {
   return Math.ceil(Math.random() * 6);
