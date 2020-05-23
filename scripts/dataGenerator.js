@@ -1,10 +1,8 @@
 const fs = require('fs');
-const csvWriter = require('csv-write-stream');
 const faker = require('faker');
-const writer = csvWriter();
 
-const randomBetweenTen = () => {
-  return Math.ceil(Math.random() * 10);
+const randomBetweenSix = () => {
+  return Math.ceil(Math.random() * 6);
 }
 
 const getRandomInt = (max) => {
@@ -20,27 +18,43 @@ const countryOfOrigin = [
   `${faker.address.country()}`,
 ];
 
-const dataGen = (num) => {
-  let id = 1;
-  writer.pipe(fs.createWriteStream('SeedData.csv'));
-  for (let i = 0; i < num; i++) {
-    for (let j = 0; j < randomBetweenTen(); j++) {
-      writer.write({
-        id: id,
-        name: `${faker.name.firstName()} ${faker.name.lastName()}`,
-        stars: getRandomInt(21),
-        date: `Reviewed in ${countryOfOrigin[getRandomInt(6)]} on ${faker.date.month()} ${getRandomInt(29) + 1}, ${getRandomInt(2) + 2018}`,
-        review: `${faker.lorem.sentences()} ${faker.lorem.sentences()}`,
-        image: 'PLACEHOLDER_FOR_URL',
-        title: `${faker.lorem.sentence()}`,
-        avatar: getRandomInt(16),
-        foundThisHelpful: getRandomInt(86)
-      });
+const writeReviews = fs.createWriteStream('SeedData.csv');
+writeReviews.write(`id,name,stars,date,review,image,title,avatar,foundThisHelpful\n`, 'utf8');
+
+function writeTenMillionReviews(writer, encoding, callback) {
+  console.log('Data is being generated... Please wait.')
+  let i = 10000000;
+  let id = 0;
+  function write() {
+    let ok = true;
+    do {
+      i -= 1;
+      id += 1;
+      for (let j = 0; j < randomBetweenSix(); j++) {
+        const name =`${faker.name.firstName()} ${faker.name.lastName()}`;
+        const stars = getRandomInt(21);
+        const date = `Reviewed in ${countryOfOrigin[getRandomInt(6)]} on ${faker.date.month()} ${getRandomInt(29) + 1}, ${getRandomInt(2) + 2018}`;
+        const review = `${faker.lorem.sentences()} ${faker.lorem.sentences()}`;
+        const image = 'PLACEHOLDER_FOR_URL';
+        const title = `${faker.lorem.sentence()}`;
+        const avatar = getRandomInt(16);
+        const foundThisHelpful = getRandomInt(86);
+        const data = `${id},${name},${stars},${date},${review},${image},${title},${avatar},${foundThisHelpful}\n`;
+        if (i === 0) {
+          writer.write(data, encoding, callback);
+        } else {
+          ok = writer.write(data, encoding);
+        }
+      }
+    } while (i > 0 && ok);
+    if (i > 0) {
+      writer.once('drain', write);
     }
-    id++;
   }
-  writer.end();
-  console.log('CSV File Made! You Da Best!')
+write()
 }
 
-dataGen(10);
+writeTenMillionReviews(writeReviews, 'utf-8', () => {
+  writeReviews.end();
+  console.log('Data Generated');
+});

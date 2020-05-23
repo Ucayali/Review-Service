@@ -6,7 +6,8 @@
     "watch": "webpack -d --watch",
     "build": "webpack --config webpack.config.js",
     "start": "nodemon server/index.js",
-    "test": "jest"
+    "test": "jest",
+    "data": "node --max-old-space-size=8192 scripts/dataGenerator.js"
   },
   "name": "reviews",
   "version": "1.0.0",
