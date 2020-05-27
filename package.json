@@ -2,7 +2,8 @@
   "scripts": {
     "build:prod": "webpack --config production.config.js",
     "test:coverage": "jest --verbose --coverage",
-    "seed": "node server/scripts/seed.js ",
+    "seed": "node scripts/seed/seed.js ",
+    "seed:postgres": "node scripts//seed/seedPostgres.js",
     "watch": "webpack -d --watch",
     "build": "webpack --config webpack.config.js",
     "start": "nodemon server/index.js",

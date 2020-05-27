@@ -9,7 +9,7 @@ CREATE TABLE reviews (
   name varchar(50),
   stars int,
   date varchar(50),
-  review varchar(500),
+  review varchar(1000),
   image varchar(250),
   title varchar(50),
   avatar int,
