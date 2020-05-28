@@ -19,7 +19,7 @@ const countryOfOrigin = [
 ];
 
 const writeReviews = fs.createWriteStream('SeedData.csv');
-writeReviews.write(`id,review_id,name,stars,date,review,image,title,avatar,foundThisHelpful\n`, 'utf8');
+writeReviews.write(`id,review_id,name,stars,date,review,image,title,avatar,foundthishelpful\n`, 'utf8');
 
 function writeTenMillionReviews(writer, encoding, callback) {
   console.log('Data is being generated... Please wait.')

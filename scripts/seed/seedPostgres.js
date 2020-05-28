@@ -30,4 +30,3 @@ reviewData.sync({force: true})
           .catch(() => {console.log('Something Happened')});
       });
   });
-
