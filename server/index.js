@@ -1,5 +1,5 @@
 const express = require("express");
-const db = require("../database");
+const db = require("../database/postgresIndex.js");
 
 const app = express();
 const PORT = 3004;
@@ -12,29 +12,11 @@ app.listen(PORT, () => {
 });
 
 app.get("/api/allreviews/", (req, res) => {
-  console.log(req._parsedOriginalUrl);
-  if (req._parsedOriginalUrl.search) {
-    var arr = req._parsedOriginalUrl.search.split("=");
-console.log(req._parsedOriginalUrl.search);
-  }
-   console.log('id server: ', arr[1]);
-  if (arr) {
-    db.getAllReviews(arr[1], (err, data) => {
-      if (err) {
-        res.status(500).send("Something Broke!");
-      } else {
-        res.json(data);
-      }
-    });
-  } else {
-    db.getAllReviews(null, (err, data) => {
-      if (err) {
-        res.status(500).send("Something Broke!");
-      } else {
-        res.json(data);
-      }
-    });
-  }
+  let arr = req._parsedOriginalUrl.search.split("=");
+
+  db.getAllReviews(arr[1])
+    .then((data) => {res.send(data).status(200).end();})
+    .catch(() => {console.log('Error Getting Data'); res.status(404).end();});
 });
 
 app.post("/api/allreviews/", (req, res) => {

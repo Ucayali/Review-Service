@@ -1,8 +1,9 @@
 node_modules
-bundle.js
+client/dist/bundle.js
 config.js
 clover.xml
 coverage-final.json
 lcov.info
 lcov-report
 SeedData.csv
+TestData.csv

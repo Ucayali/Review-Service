@@ -3,7 +3,8 @@
     "build:prod": "webpack --config production.config.js",
     "test:coverage": "jest --verbose --coverage",
     "seed": "node scripts/seed/seed.js ",
-    "seed:postgres": "node scripts//seed/seedPostgres.js",
+    "seed:postgres": "node scripts/seed/seedPostgres.js",
+    "seed:cassandra": "node scripts/seed/seedCassandra.js",
     "watch": "webpack -d --watch",
     "build": "webpack --config webpack.config.js",
     "start": "nodemon server/index.js",
@@ -17,6 +18,7 @@
   "dependencies": {
     "babel-preset-airbnb": "^5.0.0",
     "body-parser": "^1.19.0",
+    "cassandra-driver": "^4.5.2",
     "classnames": "^2.2.6",
     "csv-write-stream": "^2.0.0",
     "express": "^4.17.1",

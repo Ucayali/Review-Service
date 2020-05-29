@@ -15,7 +15,7 @@ const reviewData = sequelize.define('reviewdata', {
   image: DataTypes.STRING,
   title: DataTypes.STRING,
   avatar: DataTypes.INTEGER,
-  foundThisHelpful: DataTypes.INTEGER
+  foundthishelpful: DataTypes.INTEGER
 }, {
   indexes: [{name: 'review', fields: ['review_id'], using: 'BTREE'}],
   timestamps: false
@@ -30,4 +30,3 @@ reviewData.sync({force: true})
           .catch(() => {console.log('Something Happened')});
       });
   });
-
