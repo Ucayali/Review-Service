@@ -26,7 +26,7 @@ const getAllReviews = function(id) {
     where: {
       review_id: id
     }
-  })
+  });
 };
 
 const addReview = (data) => {
@@ -41,7 +41,7 @@ const addReview = (data) => {
     title: data.title,
     avatar: data.avatar,
     foundThisHelpful: data.foundThisHelpful
-  })
+  });
 }
 
 module.exports.getAllReviews = getAllReviews;
