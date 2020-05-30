@@ -1,3 +1,4 @@
+require('newrelic');
 const express = require("express");
 const db = require("../database/postgresIndex.js");
 
@@ -11,6 +12,7 @@ app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
 });
 
+
 app.get("/api/allreviews/", (req, res) => {
   let arr = req._parsedOriginalUrl.search.split("=");
 
@@ -19,19 +21,21 @@ app.get("/api/allreviews/", (req, res) => {
     .catch(() => {console.log('Error Getting Data'); res.status(404).end();});
 });
 
+
 app.post("/api/allreviews/", (req, res) => {
-  db.addReview(req.body, (err) => {
-    if (err) {
-      res.status(404).end();
-    } else {
-      res.status(200).end();
-    }
-  })
+  let arr = req._parsedOriginalUrl.search.split("=");
+  req.body.review_id = arr[1]
+
+  db.addReview(req.body)
+    .then(() => {res.status(200).end();})
+    .catch(() => {res.status(404).end();})
 });
+
 
 app.patch("/api/allreviews/", (req, res) => {
   var arr = req._parsedOriginalUrl.search.split("=");
-  db.updateReview(arr[1], req.body, (err) => {
+  req.body.review_id = arr[1]
+  db.updateReview(req.body, (err) => {
     if (err) {
       res.status(404).end();
     } else {
@@ -39,6 +43,7 @@ app.patch("/api/allreviews/", (req, res) => {
     }
   });
 });
+
 
 app.delete("/api/allreviews/", (req, res) => {
   var arr = req._parsedOriginalUrl.search.split("=");

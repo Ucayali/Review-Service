@@ -1,0 +1,43 @@
+config:
+  target: 'http://localhost:3004'
+  phases:
+    - duration: 60
+      arrivalRate: 10
+      rampTo: 100
+      name: 'Getting Warm'
+    - duration: 60
+      arrivalRate: 100
+      rampTo: 1000
+      name: 'Getting Warmer'
+    - duration: 120
+      arrivalRate: 1000
+      name: 'Here We Go'
+  payload:
+    path: '../TestData.csv'
+    feilds:
+      - 'id'
+      - 'review_id'
+      - 'name'
+      - 'stars'
+      - 'date'
+      - 'review'
+      - 'image'
+      - 'title'
+      - 'avatar'
+      - 'foundthishelpful'
+scenarios:
+  - flow:
+    - get:
+        url: '/?id={{ review_id }}'
+    - post:
+        url: '/api/allreviews/'
+        json:
+          id: '{{ id }}'
+          name: '{{ name }}'
+          stars: '{{ stars }}'
+          date: '{{ date }}'
+          review: '{{ review }}'
+          image: '{{ image }}'
+          title: '{{ title }}'
+          avatar: '{{ avatar }}'
+          foundThisHelpful: '{{ foundthishelpful }}'

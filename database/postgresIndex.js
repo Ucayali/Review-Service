@@ -29,4 +29,20 @@ const getAllReviews = function(id) {
   })
 };
 
+const addReview = (data) => {
+  return reviewData.create({
+    id: data.id,
+    review_id: data.review_id,
+    name: data.name,
+    stars: data.stars,
+    date: data.data,
+    review: data.review,
+    image: data.image,
+    title: data.title,
+    avatar: data.avatar,
+    foundThisHelpful: data.foundThisHelpful
+  })
+}
+
 module.exports.getAllReviews = getAllReviews;
+module.exports.addReview = addReview;

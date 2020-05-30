@@ -6,10 +6,11 @@
     "seed:postgres": "node scripts/seed/seedPostgres.js",
     "seed:cassandra": "node scripts/seed/seedCassandra.js",
     "watch": "webpack -d --watch",
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack",
     "start": "nodemon server/index.js",
     "test": "jest",
-    "data": "node --max-old-space-size=8192 scripts/dataGenerator.js"
+    "data": "node --max-old-space-size=8192 scripts/dataGenerator.js",
+    "stress": "artillery run scripts/stressTest.yml"
   },
   "name": "reviews",
   "version": "1.0.0",
@@ -26,6 +27,7 @@
     "jquery": "^3.5.0",
     "mariadb": "^2.3.1",
     "mysql": "^2.18.1",
+    "newrelic": "^6.8.0",
     "nodemon": "^2.0.3",
     "pg": "^8.2.1",
     "react": "^16.13.1",
