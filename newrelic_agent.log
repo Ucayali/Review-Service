@@ -18,3 +18,83 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":8358,"time":"2020-05-29T03:05:15.118Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
 {"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":8358,"time":"2020-05-29T03:05:15.123Z","msg":"Agent state changed from connected to started."}
 {"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":8358,"time":"2020-05-29T03:05:16.124Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13047,"time":"2020-05-30T00:05:46.597Z","msg":"Using New Relic for Node.js. Agent version: 6.8.0; Node version: v12.16.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13047,"time":"2020-05-30T00:05:46.729Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13047,"time":"2020-05-30T00:05:46.848Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13047,"time":"2020-05-30T00:05:46.848Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13047,"time":"2020-05-30T00:05:48.636Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13047,"time":"2020-05-30T00:05:48.636Z","msg":"Connected to collector-010.newrelic.com:443 with agent run ID BdOJfsrwQbfMACnXcSU9_jhe0aOkAAgBAAAnIQEAADL3AgQlPf42AwAFNi44LjAACEVsaXMtTUJQAA5SZXZpZXctU2VydmljZQ.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13047,"time":"2020-05-30T00:05:48.636Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2742129/applications/624819766","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13047,"time":"2020-05-30T00:05:48.639Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13047,"time":"2020-05-30T00:05:48.642Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13047,"time":"2020-05-30T00:05:49.649Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13068,"time":"2020-05-30T00:06:14.916Z","msg":"Using New Relic for Node.js. Agent version: 6.8.0; Node version: v12.16.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13068,"time":"2020-05-30T00:06:15.155Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13068,"time":"2020-05-30T00:06:15.294Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13068,"time":"2020-05-30T00:06:15.294Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13068,"time":"2020-05-30T00:06:17.025Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13068,"time":"2020-05-30T00:06:17.026Z","msg":"Connected to collector-010.newrelic.com:443 with agent run ID BVjxtlDdJG7UACnXcSU9_jhe0aPgAAgBAAAnIQEAADMMAgQlPf42AwAFNi44LjAACEVsaXMtTUJQAA5SZXZpZXctU2VydmljZQ.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13068,"time":"2020-05-30T00:06:17.026Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2742129/applications/624819766","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13068,"time":"2020-05-30T00:06:17.029Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13068,"time":"2020-05-30T00:06:17.032Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13068,"time":"2020-05-30T00:06:18.037Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13094,"time":"2020-05-30T00:06:24.510Z","msg":"Using New Relic for Node.js. Agent version: 6.8.0; Node version: v12.16.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13094,"time":"2020-05-30T00:06:24.622Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13094,"time":"2020-05-30T00:06:24.741Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13094,"time":"2020-05-30T00:06:24.741Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13094,"time":"2020-05-30T00:06:26.421Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13094,"time":"2020-05-30T00:06:26.422Z","msg":"Connected to collector-010.newrelic.com:443 with agent run ID BfeL7bGBTioSACnXcSU9_jhe0aPgAAgBAAAnIQEAADMmAgQlPf42AwAFNi44LjAACEVsaXMtTUJQAA5SZXZpZXctU2VydmljZQ.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13094,"time":"2020-05-30T00:06:26.422Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2742129/applications/624819766","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13094,"time":"2020-05-30T00:06:26.425Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13094,"time":"2020-05-30T00:06:26.428Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":13094,"time":"2020-05-30T00:06:27.434Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15468,"time":"2020-05-30T03:02:53.423Z","msg":"Using New Relic for Node.js. Agent version: 6.8.0; Node version: v12.16.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15468,"time":"2020-05-30T03:02:53.552Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15468,"time":"2020-05-30T03:02:53.749Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15468,"time":"2020-05-30T03:02:53.749Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15468,"time":"2020-05-30T03:02:55.552Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15468,"time":"2020-05-30T03:02:55.552Z","msg":"Connected to collector-010.newrelic.com:443 with agent run ID BXzRxxzN7vizACnXcSU9_jhe0c0gAAgBAAAnIQEAADxsAgQlPf42AwAFNi44LjAACEVsaXMtTUJQAA5SZXZpZXctU2VydmljZQ.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15468,"time":"2020-05-30T03:02:55.552Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2742129/applications/624819766","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15468,"time":"2020-05-30T03:02:55.555Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15468,"time":"2020-05-30T03:02:55.558Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15468,"time":"2020-05-30T03:02:56.559Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15493,"time":"2020-05-30T03:03:21.083Z","msg":"Using New Relic for Node.js. Agent version: 6.8.0; Node version: v12.16.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15493,"time":"2020-05-30T03:03:21.239Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15493,"time":"2020-05-30T03:03:21.375Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15493,"time":"2020-05-30T03:03:21.375Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15493,"time":"2020-05-30T03:03:23.272Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15493,"time":"2020-05-30T03:03:23.272Z","msg":"Connected to collector-010.newrelic.com:443 with agent run ID BWQunKr-uM0PACnXcSU9_jhe0c1cAAgBAAAnIQEAADyFAgQlPf42AwAFNi44LjAACEVsaXMtTUJQAA5SZXZpZXctU2VydmljZQ.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15493,"time":"2020-05-30T03:03:23.272Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2742129/applications/624819766","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15493,"time":"2020-05-30T03:03:23.275Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15493,"time":"2020-05-30T03:03:23.278Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15493,"time":"2020-05-30T03:03:24.283Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15513,"time":"2020-05-30T03:03:28.117Z","msg":"Using New Relic for Node.js. Agent version: 6.8.0; Node version: v12.16.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15513,"time":"2020-05-30T03:03:28.255Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15513,"time":"2020-05-30T03:03:28.397Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15513,"time":"2020-05-30T03:03:28.397Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15513,"time":"2020-05-30T03:03:29.761Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15513,"time":"2020-05-30T03:03:29.761Z","msg":"Connected to collector-010.newrelic.com:443 with agent run ID BXg3Qv3rjrmLACnXcSU9_jhe0c1cAAgBAAAnIQEAADyZAgQlPf42AwAFNi44LjAACEVsaXMtTUJQAA5SZXZpZXctU2VydmljZQ.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15513,"time":"2020-05-30T03:03:29.761Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2742129/applications/624819766","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15513,"time":"2020-05-30T03:03:29.765Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15513,"time":"2020-05-30T03:03:29.769Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15513,"time":"2020-05-30T03:03:30.771Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15533,"time":"2020-05-30T03:03:41.019Z","msg":"Using New Relic for Node.js. Agent version: 6.8.0; Node version: v12.16.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15533,"time":"2020-05-30T03:03:41.171Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15533,"time":"2020-05-30T03:03:41.389Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15533,"time":"2020-05-30T03:03:41.389Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15533,"time":"2020-05-30T03:03:43.065Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15533,"time":"2020-05-30T03:03:43.066Z","msg":"Connected to collector-010.newrelic.com:443 with agent run ID BTncQx_C87vFACnXcSU9_jhe0c1cAAgBAAAnIQEAADytAgQlPf42AwAFNi44LjAACEVsaXMtTUJQAA5SZXZpZXctU2VydmljZQ.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15533,"time":"2020-05-30T03:03:43.066Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2742129/applications/624819766","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15533,"time":"2020-05-30T03:03:43.068Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15533,"time":"2020-05-30T03:03:43.074Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15533,"time":"2020-05-30T03:03:44.076Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15566,"time":"2020-05-30T03:04:28.311Z","msg":"Using New Relic for Node.js. Agent version: 6.8.0; Node version: v12.16.1."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15566,"time":"2020-05-30T03:04:28.474Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15566,"time":"2020-05-30T03:04:28.716Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15566,"time":"2020-05-30T03:04:28.716Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15566,"time":"2020-05-30T03:04:30.539Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15566,"time":"2020-05-30T03:04:30.539Z","msg":"Connected to collector-010.newrelic.com:443 with agent run ID BTs1eynOKnX1ACnXcSU9_jhe0c2YAAgBAAAnIQEAADzOAgQlPf42AwAFNi44LjAACEVsaXMtTUJQAA5SZXZpZXctU2VydmljZQ.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15566,"time":"2020-05-30T03:04:30.539Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2742129/applications/624819766","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15566,"time":"2020-05-30T03:04:30.542Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15566,"time":"2020-05-30T03:04:30.545Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Elis-MBP","pid":15566,"time":"2020-05-30T03:04:31.548Z","msg":"Starting initial 1000ms harvest."}
