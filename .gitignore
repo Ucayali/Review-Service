@@ -7,3 +7,4 @@ lcov.info
 lcov-report
 SeedData.csv
 TestData.csv
+newrelic.js
