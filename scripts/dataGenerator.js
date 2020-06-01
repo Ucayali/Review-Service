@@ -40,8 +40,8 @@ function writeTenMillionReviews(writer, encoding, callback) {
         const image = 'PLACEHOLDER_FOR_URL';
         const title = `${faker.lorem.sentence()}`;
         const avatar = getRandomInt(16);
-        const foundThisHelpful = getRandomInt(86);
-        const data = `${id},${review_id},${name},${stars},${date},${review},${image},${title},${avatar},${foundThisHelpful}\n`;
+        const foundthishelpful = getRandomInt(86);
+        const data = `${id},${review_id},${name},${stars},${date},${review},${image},${title},${avatar},${foundthishelpful}\n`;
         if (i === 0) {
           writer.write(data, encoding, callback);
         } else {

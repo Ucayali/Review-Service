@@ -15,7 +15,7 @@ const reviewData = sequelize.define('reviewdata', {
   image: DataTypes.STRING,
   title: DataTypes.STRING,
   avatar: DataTypes.INTEGER,
-  foundThisHelpful: DataTypes.INTEGER
+  foundthishelpful: DataTypes.INTEGER
 }, {
   indexes: [{name: 'review', fields: ['review_id'], using: 'BTREE'}],
   timestamps: false
@@ -40,7 +40,7 @@ const addReview = (data) => {
     image: data.image,
     title: data.title,
     avatar: data.avatar,
-    foundThisHelpful: data.foundThisHelpful
+    foundthishelpful: data.foundthishelpful
   });
 }
 
